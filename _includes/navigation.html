@@ -1,0 +1,11 @@
+<div1 class="dropdown">
+  <span> Valmynd síðu</span>
+  <div2 class="dropdown-content">
+    <nav1>
+            {% for item in site.data.navigation %}
+              <a href="{{ item.link | relative_url }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
+            {% endfor %}
+    </nav1>
+</div2>
+</div1>
+

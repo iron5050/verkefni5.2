@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?g57jgf");
+  src: url("fonts/icomoon.eot?g57jgf#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?g57jgf") format("truetype"), url("fonts/icomoon.woff?g57jgf") format("woff"), url("fonts/icomoon.svg?g57jgf#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-spades:before {
+  content: "\e917"; }
+
+.icon-clubs:before {
+  content: "\e918"; }
+
+.icon-diamonds:before {
+  content: "\e919"; }
+
+.icon-heart:before {
+  content: "\e9da"; }
+
+body {
+  width: 80%;
+  margin: 0 auto;
+  background: ivory; }
+
+.mundstr {
+  width: 300px;
+  height: 200px;
+  color: ivory; }
+
+@media screen and (min-width: 600px) {
+  body {
+    background: grey; } }
+@media screen and (min-width: 1000px) {
+  body {
+    background: steelblue; } }
+.header {
+  border: 1px solid red;
+  background: red; }
+
+.header1 {
+  border: 1px solid grey;
+  background: grey;
+  padding: 10px;
+  font-style: italic; }
+
+.center {
+  width: 50%; }
+
+.center1 {
+  width: 5%; }
+
+.textcent {
+  text-align: center;
+  align-items: center; }
+
+.color {
+  color: aqua; }
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  color: yellow;
+  background: orange; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  background: lime; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+.linkur {
+  color: red; }
+
+.linkur1 {
+  color: black; }
+
+.kassi {
+  border: 50px;
+  padding: 50px;
+  background: whitesmoke; }
+
+.circle {
+  background: url(https://d13yacurqjgara.cloudfront.net/users/212457/screenshots/2212523/yo.jpg) #000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  transition: all .3s ease-in-out; }
+
+.circle:hover {
+  border-radius: 0;
+  cursor: pointer; }
+
+.text {
+  color: #fff;
+  opacity: 0;
+  text-align: center;
+  padding-top: 0px;
+  transition: all .3s ease-in-out; }
+
+.circle:hover .text {
+  padding-top: 40px;
+  opacity: 1; }
+
+.animation-box {
+  width: 75%;
+  height: 27.5rem;
+  background-color: blue;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative; }
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem; }
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0; }
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    right: 10rem; } }
+@keyframes fadeInOut {
+  0% {
+    opacity: 0; }
+  45% {
+    opacity: 1; }
+  100% {
+    opacity: 0%; } }
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 5s;
+  color: white;
+  animation-iteration-count: infinite; }
+
+.second-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 8.5rem;
+  opacity: 0;
+  animation-name: rightFadeInOut;
+  animation-delay: 3s;
+  animation-duration: 6s;
+  color: #ccc;
+  animation-iteration-count: infinite; }
+
+.third-text {
+  transform: rotate(-90deg);
+  font-size: 2rem;
+  position: absolute;
+  left: 45%;
+  top: 45%;
+  opacity: 0;
+  animation-name: topFadeOutVertical;
+  animation-delay: 7.5s;
+  animation-duration: 6s;
+  color: #A3DDF0;
+  white-space: nowrap;
+  animation-iteration-count: infinite; }
+
+.fourth-text {
+  font-size: 3.4rem;
+  position: absolute;
+  top: 10.5rem;
+  left: 10%;
+  opacity: 0;
+  color: #F0A3BE;
+  animation-name: fadeInOut;
+  animation-delay: 8.5s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite; }
+
+.fifth-text {
+  font-size: 5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 25%;
+  opacity: 0;
+  color: #F0EBA3;
+  animation-name: bottomFadeOut;
+  animation-delay: 10s;
+  animation-duration: 9s;
+  animation-iteration-count: infinite; }
+
+.dived {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example;
+  /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s;
+  /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease; }
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
+/* Standard syntax */
+@keyframes example {
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px; }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px; }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px; }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px; }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px; } }
